@@ -1,4 +1,10 @@
 <script>
-if(window.hiWalletQueryUserDataAPI){alert(hiWalletQueryUserDataAPI.getServiceToken());}
+if(window.hiWalletQueryUserDataAPI){
+  alert(hiWalletQueryUserDataAPI.getServiceToken());
+  alert(hiWalletQueryUserDataAPI.getCplc());
+  alert(hiWalletQueryUserDataAPI.getDeviceId());
+  alert(hiWalletQueryUserDataAPI.getUserID());
+}
+
 else{console.log("a")}
 </script>
