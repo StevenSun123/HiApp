@@ -5,20 +5,22 @@
 <script>
 var st;
 //	st = hiWalletQueryUserDataAPI.getPhoneID();
-	st = hiWalletQueryUserDataAPI.getPhoneID() + " " + '123';
+	st = hiWalletQueryUserDataAPI.getPhoneID();
+	st1 = 123;
 //	deviceid = hwAwardsJSApi.getDeviceId();
 //	cplc = hwAwardsJSApi.getCplc
 //        st = 123;
 	
 //setTimeout("getinfo()",20);
-function getinfo(p){
+function getinfo(p,p1){
 	alert(p);
+	alert(p1);
 //var st
 //	st=hwAwardsJSApi.getServiceToken();
 //	window.HiSpaceObject.getServiceToken();
 }
 </script>
 </head>
-<body onload=getinfo(st);>
+<body onload=getinfo(st,st1);>
 </body>
 </html>
