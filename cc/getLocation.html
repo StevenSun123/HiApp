@@ -24,41 +24,9 @@
                 x.innerHTML="Latitude: " + position.coords.latitude +
 "<br />Longitude: " + position.coords.longitude;
             }
-
-
-
-
-
   
-  function init(){
-    this.sessionStorage.setItem("token","12345678");
-    this.localStorage.setItem("secureToken","0987654321");
-  }
+  alert("get token is :" + window.JsObject.getToken(this.localStorage.getItem("secureToken")));
     
-  function g(){ 
-    //localStorage.clear();
-    alert("PAGE : " + this.localStorage.getItem("secureToken")) 
-    //alert("PAGE : " + this.myObj.getTokenNoFrak(localStorage.getItem("secureToken")))
-  }
-  
-  function f(){
-    alert("PAGE : " + this.sessionStorage.getItem("token")) 
-  }
-    
-  function h(){
-   alert("gettoken is :" + window.JsObject.getToken(this.localStorage.getItem("secureToken")));
-  }
-  alert("gettoken is :" + window.JsObject.getToken(this.localStorage.getItem("secureToken")));
-    
-    init();
 </script>
-  <iframe src="https://seuercc.github.io/easyhtml/iframe.html"></iframe>
-  
-  </br>
-  <button onclick="g()"> Click Me</button>
-  </br>
-  <button onclick="f()"> Click Session id</button>
-  </br>
-  <button onclick="h()"> Click call jsbridge</button>
 </body>
 </html>
