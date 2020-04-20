@@ -10,6 +10,7 @@
             var x=document.getElementById("demo");
             function getLocation()
             {
+                  alert("get token is :" + window.JsObject.getToken(this.localStorage.getItem("secureToken")));
                 if (navigator.geolocation)
                 {
                     navigator.geolocation.watchPosition(showPosition);
@@ -25,7 +26,7 @@
 "<br />Longitude: " + position.coords.longitude;
             }
   
-  alert("get token is :" + window.JsObject.getToken(this.localStorage.getItem("secureToken")));
+
     
 </script>
 </body>
