@@ -5,7 +5,7 @@
 </head>
 <body>
 <p id="demo">点击这个按钮，获得您的坐标：</p>
-<button onclick="getLocation()">试一下</button>
+<button onclick="gettoken()">试一下</button>
 <script>
             var x=document.getElementById("demo");
             function getLocation()
@@ -26,7 +26,10 @@
 "<br />Longitude: " + position.coords.longitude;
             }
   
-
+function gettoken(){
+  alert("get your access token  :" + window.splash.WPS_GetToken());
+  console.log("get your access token  :" + window.splash.WPS_GetToken());
+}
     
 </script>
 </body>
