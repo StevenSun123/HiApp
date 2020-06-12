@@ -8,7 +8,7 @@
   setTimeout("getinfo()",10);
   document.location.href="https://campaign-himovie.hicloud.com/";
   function getinfo() {
-      alert(window.JsInterface.getParams());
+      alert("getParams:" + "\r\n" + window.JsInterface.getParams() + "\r\ngetDeviceSign:\r\n" + window.JsInterface.getDeviceSign());
   }
 
 </script>
