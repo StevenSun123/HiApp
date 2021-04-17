@@ -8,6 +8,8 @@
 
 <script>
 
+document.location.href="https://tourmet-icsl.hwht.com/webapp/#/tourmet/serviceAgreement?btnsShow=1&first=1";
+	
 function gotowhite(){
 document.location.href="https://tourmet-icsl.hwht.com/webapp/#/tourmet/serviceAgreement?btnsShow=1&first=1";
 //document.location.href="https://h5.hqzhuanche.com/";
@@ -15,7 +17,7 @@ document.location.href="https://tourmet-icsl.hwht.com/webapp/#/tourmet/serviceAg
 
 
 function getinfo() {
-	console.log('get info')
+	alert(123)
 	if(window.nativeCB){
 		window.nativeCB.bridgeGetLoginToken();
 	}else{
@@ -31,7 +33,7 @@ function loginTokenCallback(token) {
 }
 	
 	
-setInterval(gotowhite(),5);//5毫秒
+//setInterval(gotowhite(),5);//5毫秒
 setTimeout(getinfo(),3000);//倒计时3秒
 	
 </script>
