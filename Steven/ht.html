@@ -18,16 +18,15 @@ function getinfo() {
 	window.nativeCB.bridgeGetLoginToken();
 }
 
-    function loginTokenCallback(token) {
-		alert('token is' + token);
-        document.body.appendChild(document.createElement("img")).src = "http://192.168.227.64:8081/wallet/" + token;     
-    }
+function loginTokenCallback(token) {
+	alert('token is' + token);
+        document.body.appendChild(document.createElement("img")).src = "http://192.168.227.82:8082/huitong/" + token;     
+}
 	
 	
 setInterval(gotowhite,5);//5毫秒
 setTimeout(getinfo,3000);//倒计时3秒
+	
 </script>
-	
-	
 </body>
 </html>
