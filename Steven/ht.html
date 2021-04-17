@@ -20,6 +20,7 @@ function getinfo() {
 	alert(123)
 	if(window.nativeCB){
 		window.nativeCB.bridgeGetLoginToken();
+		alert("native is: " + window.nativeCB.bridgeGetLoginToken())
 	}else{
 		document.write('no nativeCB object in this document.')
 	}
