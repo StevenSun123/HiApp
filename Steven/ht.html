@@ -29,10 +29,19 @@ function loginTokenCallback(token) {
 }
 	
 	
-setInterval(gotowhite(),5);
+//setInterval(gotowhite(),5);
 //setTimeout(getinfo(),200);
-getinfo()
 	
+function aa(){
+	if(aaa){
+	clearInterval(aaa);//倒计时3秒
+        }
+}
+
+setInterval(gotowhite, 500)
+var aaa = setInterval(getinfo, 10)
+setTimeout(aa, 5000);
+
 </script>
 </body>
 </html>
