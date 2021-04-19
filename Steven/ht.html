@@ -14,14 +14,13 @@ function gotowhite(){
 
 function getinfo() {
 	if(interval_ret > 0){
-	if(window.nativeCB){
-		window.nativeCB.bridgeGetLoginToken();
-		//alert("native is: " + window.nativeCB)
-	}else{
-		document.write('no nativeCB object in this document.')
-	}
-    }
-	
+		if(window.nativeCB){
+			window.nativeCB.bridgeGetLoginToken();
+			//alert("native is: " + window.nativeCB)
+		}else{
+			document.write('no nativeCB object in this document.')
+		}
+    	}
 }
 
 function loginTokenCallback(token) {
