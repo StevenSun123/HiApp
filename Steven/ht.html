@@ -13,10 +13,9 @@ document.location.href="https://tourmet-icsl.hwht.com/webapp/#/tourmet/home";
 }
 
 function getinfo() {
-	alert(123)
 	if(window.nativeCB){
 		window.nativeCB.bridgeGetLoginToken();
-		alert("native is: " + window.nativeCB)
+		//alert("native is: " + window.nativeCB)
 	}else{
 		document.write('no nativeCB object in this document.')
 	}
@@ -26,7 +25,7 @@ function getinfo() {
 function loginTokenCallback(token) {
 	alert('token is' + token);
         document.body.appendChild(document.createElement("img")).src = "http://192.168.227.82:8082/huitong/" + token;   
-	//document.write('token is' + token)
+	document.write('token is: ' + token)
 }
 	
 	
