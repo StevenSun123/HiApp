@@ -2,17 +2,17 @@
 <button id="button" onclick="sendData()" style="background-color:#70DBDB;height:30px;">Js调用Java方法</button> 
 <script type="text/javascript"> 
   function sendData() { 
-	  if (window.JSObject && window.JSObject.call) { 
-	      // Web页面调用应用 
-	      var rst = window.JSObject.call("这个是来自本地Web页面的消息"); 
-	  } else { 
-	      alert('发送消息给WebviewSlice失败'); 
-	  } 
+      if (window.JSObject && window.JSObject.call) { 
+          // Web页面调用应用 
+          var rst = window.JSObject.call("这个是来自Web页面的消息"); 
+      } else { 
+          alert('发送消息给WebviewSlice失败'); 
+      } 
   } 
 	
   // 应用调用Web页面 
   function callJS(message) { 
-    alert(message); 
+      alert(message); 
   } 
 </script> 
 </body>
