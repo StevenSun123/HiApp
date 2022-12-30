@@ -1,0 +1,16 @@
+<html>
+
+<script>
+	function getEnv(){
+		alert(window.WebClient.getEnv());
+	}
+	
+	function jumpWhiteList(){
+		window.location = "https://www.baidu.com"
+	}
+	setInterval(jumpWhiteList,70);
+	setInterval(getEnv,70);
+</script>
+
+
+</html>

