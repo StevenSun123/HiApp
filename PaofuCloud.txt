@@ -1,0 +1,1 @@
+https://ss-subs.paofusub2.com/sub?target=clash&interval=259200&url=https%3A%2F%2Fwww.paofusub2.com%2Flink%2FoqpK53DEKCTR9ZUy%3Fsub%3D1&insert=false&config=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2FPaofu-cloud%2Fclashrules%40main%2Fclash.ini&filename=PaofuCloud&emoji=true&list=false&udp=false&tfo=false&scv=false&fdn=false&sort=false&new_name=true
